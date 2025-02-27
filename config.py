@@ -1,5 +1,5 @@
-from environs import  Env
+from environs import Env
 
 env = Env()
-env.read_env() # читаем данные из .env
+env.read_env()
 bot_token = env("BOT_TOKEN")

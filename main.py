@@ -1,8 +1,8 @@
 from bot import bot
-from handlers.start_handlers import register_start_handler
-from handlers.game_handlers import register_game_handlers
+from handlers.user_handlers import register_user_handlers
+from handlers.move_handlers import register_move_handlers
 
-register_start_handler(bot)
-register_game_handlers(bot)
-print(1)
+register_user_handlers(bot)
+register_move_handlers(bot)
+
 bot.polling()
